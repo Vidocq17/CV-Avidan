@@ -181,7 +181,7 @@ header a:hover {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	background-image: url('./desktop.jpg');
+	background-image: url('Images/desktop.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -288,7 +288,7 @@ span {
 
 /* COMPETENCES */
 
-.competences {
+/* .competences {
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
@@ -365,6 +365,44 @@ span {
 	width: 70%;
 	transition: width 0.5s ease-in-out;
 }
+*/ 
+
+.competences {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.competences .title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.competences .title h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.skill {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.skill h3 {
+	font-size: 35px;
+	margin: 20px;
+}
+
+.competences .front-end, .back-end, .autre {
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	justify-content: center;
+}
 
 
 /* CURRENTLY */
@@ -429,7 +467,6 @@ span {
 .project .title h1 {
 	text-transform: uppercase;
 	font-size: 40px;
-	margin-bottom: 50px;
 }
 
 figure {
@@ -446,19 +483,27 @@ button {
 }
 
 
+.project h3 {
+	font-family: 'OFL Sorts Mill Goudy TT';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 119px;
+  color: black;
+}
+
 /* LGDD_design */
 
 .lgdd_design {
 	color: white;
-	padding-bottom: 100px;
+	padding-bottom: 4%;
 }
 
-.lgdd_design .content {
+.lgdd_design .content_lgdd {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-top: 90px;
 }
 
 .lgdd_design .content_project {
@@ -468,19 +513,18 @@ button {
 
 }
 
-.lgdd_design .name_project a {
-	color: black;
-	text-decoration: underline;
+.lgdd_code{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.lgdd_design .name_project h3 {
-	font-family: 'OFL Sorts Mill Goudy TT';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 40px;
-	line-height: 119px;
-  color: black;
+.lgdd_code a {
+	color: black;
+	text-decoration: underline;
+	font-size: 30px;
 }
+
 
 .lgdd_design figure img {
 	width: 900px;
@@ -496,15 +540,15 @@ figure.is-active {
 	display: block;
 }
 
-button {
+.btn-prev_lgdd, .btn-next_lgdd{
 	padding: 20px;
 	margin: auto;
 	background-color: #760421;
 	color: white; 
 	border-radius: 50%;
 	border: none;
-	height: 80px;
-	width: 80px;
+	height: 60px;
+	width: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -515,10 +559,46 @@ button {
 
 
 
+/* NETFLIX */ 
+
+.content_netflix .content_project {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.content_netflix img {
+	width: 900px;
+	height: 500px;
+}
+
+.content_netflix .btn-prev_netflix, .btn-next_netflix {
+	padding: 20px;
+	margin: auto;
+	background-color: black;
+	color: white; 
+	border-radius: 50%;
+	border: none;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.netflix_code a {
+	color: black;
+	text-decoration: underline;
+	font-size: 30px;
+}
+
 /* contact */
 
 .contact {
 	margin-bottom: 5%;
+	background-color: black;
+	color: #fff;
+	padding-bottom: 2rem;
 }
 
 .contact .content {
@@ -544,4 +624,5 @@ button {
 
 .contact .content .fa-solid, .fa-brands{
 	font-size: 40px;
+	color: white;
 }
